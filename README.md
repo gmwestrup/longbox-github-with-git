@@ -61,7 +61,7 @@ inside an archive is read and takes priority over the filename.
 ## Quickstart — Docker (recommended for a NAS)
 
 ```bash
-git clone https://github.com/<you>/longbox.git
+git clone https://github.com/gmwestrup/longbox.git
 cd longbox
 ```
 
