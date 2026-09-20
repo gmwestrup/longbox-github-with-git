@@ -1,0 +1,14 @@
+services:
+  longbox:
+    build: .
+    container_name: longbox
+    ports:
+      - "8767:8767"
+    volumes:
+      # EDIT THE FIRST LINE ONLY:
+      # your clean library (the organizer's output folder) -> /library
+      # :ro means Longbox physically cannot modify your files.
+      - /volume1/Media/Komga-Library:/library:ro
+      # database + cover cache live here, outside the container
+      - ./longbox-data:/config
+    restart: unless-stopped

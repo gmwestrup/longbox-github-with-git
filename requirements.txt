@@ -1,0 +1,10 @@
+# Core — required
+flask>=3.0
+pillow>=10.0
+
+# Optional — enables reading ComicInfo.xml inside .cbr and CBR->CBZ conversion.
+# Also requires the `unrar` (or `unrar-free`) binary on PATH.
+rarfile>=4.1
+
+# Optional — enables .pdf comics/magazines in the reader.
+pymupdf>=1.24

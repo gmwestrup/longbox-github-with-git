@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Longbox runtime data (never commit your library state)
+longbox-data/
+*.db
+*.db-wal
+*.db-shm
+covers/
+config.json
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
