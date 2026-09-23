@@ -11,6 +11,8 @@ NAS) or **Windows** (double-click a `.pyw` file). Your library is
 always opened read-only — Longbox never modifies, moves, or deletes
 your files.
 
+![Longbox home screen — Continue Reading, Up Next, and Recently Added shelves](docs/screenshots/home.png)
+
 > Pairs well with the Comic & Magazine Organizer (verifies, cleans up,
 > and standardizes a messy library into the folder layout Longbox
 > expects) — but Longbox works with any library already organized as
@@ -39,6 +41,8 @@ your files.
 - **Safety** — the source library is mounted/opened read-only. All of
   Longbox's own state (SQLite database, cover cache) lives in a
   separate data folder.
+
+![A series page showing every issue in order, with a Resume button](docs/screenshots/series.png)
 
 ## Expected library layout
 
@@ -131,12 +135,22 @@ login — keep Longbox on your LAN and don't port-forward 8767.
 RTL flips which physical edge advances the page, so arrow keys and
 swipe direction stay intuitive in manga mode.
 
+Two-page spread mode pairs facing pages automatically:
+
+![Two-page spread mode showing facing pages side by side](docs/screenshots/reader-spread.png)
+
+Covers and landscape double-page spreads are detected and shown alone
+instead of being awkwardly split in half:
+
+![A landscape double-page spread shown as a single full-width page](docs/screenshots/reader-landscape.png)
+
 ## Project layout
 
 ```
 longbox/
 ├── app/longbox.py        # the entire application — Flask backend + embedded UI
 ├── windows/Longbox.pyw   # identical source, .pyw extension for double-click launch
+├── docs/screenshots/     # images used in this README
 ├── Dockerfile
 ├── docker-compose.yml
 ├── requirements.txt
